@@ -1,0 +1,14 @@
+// Example FPS boost (Java)
+public class FPSBoostMod {
+    
+    public void applyOptimizations() {
+        // Reduce render distance
+        Minecraft.getMinecraft().gameSettings.renderDistanceChunks = 8;
+        
+        // Disable fancy graphics settings
+        Minecraft.getMinecraft().gameSettings.fancyGraphics = false;
+        
+        // Apply other performance tweaks
+        // ...
+    }
+}
