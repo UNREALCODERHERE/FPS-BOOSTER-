@@ -1,0 +1,19 @@
+// Example CPS boost (Java)
+public class CPSBoostMod {
+    
+    private boolean clicking;
+    
+    public void startClicking() {
+        clicking = true;
+        new Thread(() -> {
+            while (clicking) {
+                // Simulate mouse click
+                // Code to handle mouse events and clicking logic
+            }
+        }).start();
+    }
+    
+    public void stopClicking() {
+        clicking = false;
+    }
+}
